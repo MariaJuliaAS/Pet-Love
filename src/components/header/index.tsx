@@ -22,11 +22,7 @@ export function Header() {
                         <span className=" bg-[#F66D21] rounded-full w-6 h-6 flex items-center justify-center text-white text-lg absolute -right-3 -top-3">2</span>
                     </Link>
                 </div>
-
-
-
             </nav>
-
 
         </header>
     )
