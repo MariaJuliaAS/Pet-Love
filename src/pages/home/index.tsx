@@ -1,6 +1,9 @@
+import { StartSection } from "../../components/start"
 
 export function Home() {
     return (
-        <h1>Página de HOME</h1>
+        <main className="w-full flex items-center justify-center flex-col">
+            <StartSection />
+        </main>
     )
 }

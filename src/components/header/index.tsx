@@ -3,9 +3,9 @@ import { IoMdCart } from "react-icons/io";
 
 export function Header() {
     return (
-        <header className="w-full flex px-1 bg-white border-b border-gray-300">
+        <header className="w-full flex px-1 bg-white border-b border-gray-300 h-20">
 
-            <nav className="w-full max-w-yxl h-20 flex items-center justify-between px-5 mx-auto">
+            <nav className="w-full max-w-yxl flex items-center justify-between px-5 mx-auto">
                 <Link to="/"
                     className="sm:text-3xl md:text-4xl font-bold text-2xl text-[#0ABAB5] select-none">
                     Pet Love
