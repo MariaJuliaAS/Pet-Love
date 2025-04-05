@@ -11,11 +11,11 @@ export function StartSection() {
                 </div>
 
                 <div className="mt-10 flex gap-8">
-                    <button className="sm:w-44 sm:py-3 sm:text-lg bg-[#F66D21] text-white w-33 rounded-lg py-1 font-medium text-sm cursor-pointer transition-all duration-200 hover:scale-105">
+                    <button className="sm:py-3 sm:text-lg bg-[#F66D21] text-white rounded-lg py-1 px-3 font-medium text-sm cursor-pointer transition-all duration-200 hover:scale-105">
                         Ver Produtos
                     </button>
 
-                    <button className="sm:w-44 sm:py-3 sm:text-lg bg-white border border-[#0ABAB5] text-[#0ABAB5] w-33 rounded-lg py-1 font-medium text-sm cursor-pointer transition-all duration-200 hover:scale-105">
+                    <button className="sm:py-3 sm:text-lg bg-white border border-[#0ABAB5] text-[#0ABAB5] rounded-lg py-1 px-3 font-medium text-sm cursor-pointer transition-all duration-200 hover:scale-105">
                         Nossos Serviços
                     </button>
                 </div>
