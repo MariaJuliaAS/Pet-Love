@@ -7,12 +7,12 @@ export function OurServices() {
     return (
         <section id="ourServices" className="lg:h-screen w-full h-full flex flex-col items-center justify-center px-12 py-7 bg-[#FFE8D6]">
 
-            <div className="flex flex-col items-center mb-32 mt-12">
+            <div className="flex flex-col items-center mb-24">
                 <h1 className="sm:text-5xl text-3xl font-bold text-[#F66D21] mb-3">Nossos Serviços</h1>
                 <p className="sm:text-2xl text-base text-center text-[#808080]">Serviços de cuidados profissionais para seus amiguinhos.</p>
             </div>
 
-            <div className="lg:grid-cols-2 grid grid-cols-1 gap-24">
+            <div className="lg:grid-cols-2 grid grid-cols-1 gap-18">
                 <div className="bg-[#E6F8F7] rounded-xl border border-[#d3d3d3] flex flex-col items-center py-5 px-7">
                     <img src={bathGrooming} alt="Bath and Grooming" className="rounded-full w-20 h-20 object-cover" />
                     <h4 className="sm:text-xl font-medium text-base m-1.5">Banho e Tosa</h4>
