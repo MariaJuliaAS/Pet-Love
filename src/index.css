@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
