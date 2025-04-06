@@ -12,7 +12,7 @@ export function OurServices() {
                 <p className="2xl:text-xl sm:text-lg text-sm text-center text-[#808080]">Serviços de cuidados profissionais para seus amiguinhos.</p>
             </div>
 
-            <div className="lg:grid-cols-2 grid grid-cols-1 gap-18 mb-12">
+            <div className="lg:grid-cols-2 sm:gap-18 grid grid-cols-1 gap-8 mb-12">
                 <div className="bg-[#E6F8F7] rounded-xl border border-[#d3d3d3] flex flex-col items-center py-3 px-5">
                     <img src={bathGrooming} alt="Bath and Grooming" className="rounded-full w-20 h-20 object-cover" />
                     <h4 className="sm:text-lg font-medium text-base m-1.5">Banho e Tosa</h4>
