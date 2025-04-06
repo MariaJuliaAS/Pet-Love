@@ -2,7 +2,7 @@ import DogStart from "../../assets/Dog-Start.jpg";
 
 export function StartSection() {
     return (
-        <section id="start" className="lg:flex-row lg:gap-1 bg-[#EDFBFA] w-full flex flex-col items-center justify-center gap-18 px-12 py-7" style={{ height: "calc(100vh - 5rem" }}>
+        <section id="start" className="lg:flex-row lg:gap-1 bg-[#EDFBFA] w-full flex flex-col items-center justify-center gap-18 px-12 py-7" style={{ height: "calc(100vh - 4rem" }}>
 
             <div className="2xl:pl-32 lg:items-start lg:flex-1 flex flex-col items-center">
                 <div className="sm:text-start text-center">
@@ -23,7 +23,7 @@ export function StartSection() {
 
             <div className="lg:flex-1 flex flex-col items-center">
                 <img src={DogStart} alt="Picture of pet"
-                    className="2xl:w-110 xl:w-96 lg:w-82 sm:w-72 w-52 rounded-2xl"
+                    className="xl:w-96 lg:w-82 sm:w-72 w-52 rounded-2xl"
                 />
             </div>
 
