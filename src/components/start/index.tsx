@@ -23,7 +23,7 @@ export function StartSection() {
 
             <div className="lg:flex-1 flex flex-col items-center">
                 <img src={DogStart} alt="Picture of pet"
-                    className="xl:w-96 lg:w-82 sm:h-full w-72 rounded-2xl object-cover h-96"
+                    className="xl:w-96 lg:w-82 sm:h-full sm:rounded-2xl w-72 rounded-full object-cover h-96"
                 />
             </div>
 

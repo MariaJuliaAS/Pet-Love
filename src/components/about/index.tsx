@@ -5,7 +5,7 @@ export function AboutSection() {
         <section id="about" className="lg:h-screen lg:flex-row w-full h-full min-h-screen flex flex-col-reverse items-center justify-center gap-12 px-12 py-7 bg-white">
 
             <div className="sm:flex-1 flex justify-center">
-                <img src={imgHamster} alt="Picture of hamster" className="2xl:10/12 xl:w-9/12 w-full object-cover rounded-2xl" />
+                <img src={imgHamster} alt="Picture of hamster" className="2xl:w-10/12 xl:w-9/12 sm:rounded-2xl w-full object-cover rounded-full" />
             </div>
 
             <div className="sm:flex-1">
