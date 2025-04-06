@@ -11,7 +11,7 @@ export function FeaturedProducts() {
                 <p className='2xl:text-xl sm:text-lg text-sm text-center text-[#808080]'>Veja os produtos mais vendidos para seus amados pets.</p>
             </div>
 
-            <div className='2xl:my-12 my-6 lg:flex-row flex flex-col items-center justify-center gap-18'>
+            <div className='2xl:my-12 my-6 lg:flex-row sm:gap-18 flex flex-col items-center justify-center gap-9'>
                 <div className='bg-[#FFE8D6] rounded-xl p-4 cursor-pointer border border-[#d3d3d3] transition-all duration-200 ease-in-out hover:scale-110'>
                     <img src={imgRacao} alt="Picture of dog food" className='2xl:w-65 sm:w-60 rounded-lg w-50 mb-4' />
                     <h4 className='2xl:max-w-65 sm:max-w-60 max-w-50 font-xl font-semibold text-[#F66D21]'>Ração Premier Fórmula para Cães Sênior</h4>
