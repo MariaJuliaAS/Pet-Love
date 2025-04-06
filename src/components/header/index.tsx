@@ -3,7 +3,7 @@ import { IoMdCart } from "react-icons/io";
 
 export function Header() {
     return (
-        <header className="w-full flex px-1 bg-white border-b border-gray-300 h-16 sticky top-0">
+        <header className="w-full flex px-1 bg-white border-b border-gray-300 h-16 sticky top-0 z-10">
 
             <nav className="w-full max-w-yxl flex items-center justify-between px-5 mx-auto">
                 <a href="#start"
