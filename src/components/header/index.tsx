@@ -15,6 +15,7 @@ export function Header() {
                     <a href="#featuredProducts" className="transition-all duration-200 ease-in-out hover:scale-105">Produtos</a>
                     <a href="#ourServices" className="transition-all duration-200 ease-in-out hover:scale-105">Serviços</a>
                     <a href="#about" className="transition-all duration-200 ease-in-out hover:scale-105">Sobre</a>
+                    <a href="#clients" className="transition-all duration-200 ease-in-out hover:scale-105">Depoimentos</a>
                     <a href="#contact" className="transition-all duration-200 ease-in-out hover:scale-105">Contato</a>
 
                     <Link to="/cart" className="sm:ml-8 relative">
