@@ -9,7 +9,7 @@ export function AboutSection() {
             </div>
 
             <div className="sm:flex-1">
-                <h1 className="2xl:text-5xl sm:text-4xl text-2xl font-bold text-[#8A4FFF] mb-4">Sobre a Pet Love</h1>
+                <h1 className="2xl:text-5xl md:max-w-4xl sm:text-3xl text-2xl font-bold text-[#8A4FFF] mb-4">Sobre a Pet Love</h1>
                 <p className="2xl:text-xl sm:text-lg text-sm text-[#6C6C6C]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices nisl felis, in iaculis lectus feugiat id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In auctor mi eu lorem suscipit mollis. </p>
                 <p className="2xl:text-xl sm:text-lg text-sm text-[#6C6C6C] pt-2">Nunc posuere mi dolor, nec elementum odio pulvinar ut. Quisque sit amet accumsan nulla, a rhoncus odio. Vestibulum condimentum tellus vel aliquam porta. Mauris vel interdum sem.</p>
 

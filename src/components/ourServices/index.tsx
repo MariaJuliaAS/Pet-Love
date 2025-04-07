@@ -8,7 +8,7 @@ export function OurServices() {
         <section id="ourServices" className="w-full h-full min-h-screen flex flex-col items-center justify-center px-12 py-7 bg-[#FFE8D6]">
 
             <div className="my-12 flex flex-col items-center ">
-                <h1 className="2xl:text-5xl sm:text-4xl text-2xl font-bold text-[#F66D21] mb-3">Nossos Serviços</h1>
+                <h1 className="2xl:text-5xl md:max-w-4xl sm:text-3xl text-2xl font-bold text-[#F66D21] mb-3">Nossos Serviços</h1>
                 <p className="2xl:text-xl sm:text-lg text-sm text-center text-[#808080]">Serviços de cuidados profissionais para seus amiguinhos.</p>
             </div>
 

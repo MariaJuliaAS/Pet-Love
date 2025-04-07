@@ -7,7 +7,7 @@ export function FeaturedProducts() {
         <section id="featuredProducts" className="min-h-screen h-full w-full flex flex-col items-center justify-center px-12 py-7">
 
             <div className='flex flex-col items-center my-12'>
-                <h1 className='2xl:text-5xl sm:text-4xl text-2xl text-[#0ABAB5] font-bold mb-3'>Produtos em Destaque</h1>
+                <h1 className='2xl:text-5xl md:max-w-4xl sm:text-3xl text-2xl text-[#0ABAB5] font-bold mb-3'>Produtos em Destaque</h1>
                 <p className='2xl:text-xl sm:text-lg text-sm text-center text-[#808080]'>Veja os produtos mais vendidos para seus amados pets.</p>
             </div>
 
