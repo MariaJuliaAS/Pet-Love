@@ -6,7 +6,7 @@ export function StartSection() {
 
             <div className="2xl:pl-32 lg:items-start lg:flex-1 flex flex-col items-center">
                 <div className="sm:text-start text-center">
-                    <h1 className="md:max-w-3xl 2xl:text-5xl md:max-w-4xl sm:text-3xl text-2xl font-bold max-w-full text-[#121212] mb-3">O Melhor Lugar para o Seu Pet no Melhor Lugar</h1>
+                    <h1 className="2xl:text-5xl md:max-w-4xl sm:text-3xl text-2xl font-bold max-w-full text-[#121212] mb-3">O Melhor Lugar para o Seu Pet no Melhor Lugar</h1>
                     <p className="md:max-w-2xl 2xl:text-xl sm:text-lg text-sm max-w-full text-[#808080]">De alimentos premium a brinquedos e acessórios, temos tudo para manter seus amigos peludos felizes e saudáveis em um só lugar.</p>
                 </div>
 
