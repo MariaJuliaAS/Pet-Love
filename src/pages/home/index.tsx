@@ -2,6 +2,7 @@ import { StartSection } from "../../components/start";
 import { FeaturedProducts } from "../../components/featuredProducts";
 import { OurServices } from "../../components/ourServices";
 import { AboutSection } from "../../components/about";
+import { ClientsSection } from "../../components/clients";
 import { ContactSection } from "../../components/contact";
 
 export function Home() {
@@ -11,6 +12,7 @@ export function Home() {
             <FeaturedProducts />
             <OurServices />
             <AboutSection />
+            <ClientsSection />
             <ContactSection />
         </main>
     )
