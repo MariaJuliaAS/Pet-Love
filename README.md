@@ -24,7 +24,7 @@ Esse foi um projeto pessoal para praticar e consolidar conhecimentos em React, T
 - **React** – UI reativa e baseada em componentes
 - **TypeScript** – Segurança com tipagens e melhor escalabilidade
 - **Tailwind CSS** – Primeira vez utilizando essa poderosa ferramenta de estilização!
-- **Mocka** – Simulação de uma API para produtos
+- **Mock** – Simulação de uma API para produtos
 - **Vite** – Ferramenta de build e desenvolvimento rápido
 
 ---
