@@ -13,7 +13,7 @@ export function Products() {
 
             <section className="lg:grid-cols-3 sm:grid-cols-2 grid grid-cols-1 gap-12 place-items-center my-7">
                 {products?.map((item, index) => (
-                    <Link to='/' key={item.id} style={{ backgroundColor: randomBgColors[index % bgColors.length] }} className='2xl:max-w-85 sm:max-w-75 max-w-70 rounded-xl p-4 cursor-pointer border border-[#d3d3d3] transition-all duration-200 ease-in-out hover:scale-110'>
+                    <Link to={`/details/${item.id}`} key={item.id} style={{ backgroundColor: randomBgColors[index % bgColors.length] }} className='2xl:max-w-85 sm:max-w-75 max-w-70 rounded-xl p-4 cursor-pointer border border-[#d3d3d3] transition-all duration-200 ease-in-out hover:scale-110'>
                         <img src={item.cover} alt={item.title} className='rounded-lg mb-4' />
                         <h4 className='font-xl font-semibold' style={{ color: randomTextColors[index % textColors.length] }}>{item.title}</h4>
                         <div className='flex justify-between my-4'>

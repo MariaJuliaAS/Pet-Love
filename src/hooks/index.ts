@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { api } from "../services/api";
 
-interface ProductsProps {
+export interface ProductsProps {
     id: string;
     title: string;
     description: string;
