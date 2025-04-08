@@ -1,5 +1,6 @@
 import { createContext, ReactNode, useState } from "react";
 import { ProductsProps } from "../hooks";
+import toast from "react-hot-toast";
 
 interface CartContextData {
     cart: CartProps[];
@@ -39,6 +40,7 @@ function CartProvider({ children }: CartProviderProps) {
             cartList[indexItem].subtotal = cartList[indexItem].price * cartList[indexItem].amount
             setCart(cartList)
             totalResultCart(cartList)
+            toast.success('Produto adicionado ao carrinho!')
             return
         }
 
@@ -50,6 +52,7 @@ function CartProvider({ children }: CartProviderProps) {
 
         setCart(products => [...products, data])
         totalResultCart([...cart, data])
+        toast.success('Novo produto adicionado ao carrinho!')
     }
 
     function removeItem(removeItem: ProductsProps) {
@@ -62,12 +65,14 @@ function CartProvider({ children }: CartProviderProps) {
             cartList[indexItem].subtotal = cartList[indexItem].price * cartList[indexItem].amount
             setCart(cartList)
             totalResultCart(cartList)
+            toast.success('Quantidade atualizada!')
             return
         }
 
         const removeProduct = cart.filter(item => item.id !== removeItem.id)
         setCart(removeProduct)
         totalResultCart(removeProduct)
+        toast.success('Produto removido do carrinho!')
     }
 
     function totalResultCart(items: CartProps[]) {
