@@ -6,7 +6,7 @@ export function Header() {
         <header className=" w-full flex px-1 bg-white border-b border-gray-300 h-16 sticky top-0 z-10">
 
             <nav className="w-full max-w-yxl flex items-center justify-between px-5 mx-auto">
-                <a href="#start"
+                <a href="/#start"
                     className="sm:text-3xl md:text-4xl font-bold text-2xl text-[#0ABAB5] select-none">
                     Pet Love
                 </a>
