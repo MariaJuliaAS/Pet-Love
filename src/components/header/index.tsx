@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import { IoMdCart } from "react-icons/io";
+import { useContext } from "react";
+import { CartContext } from "../../context/cartContext";
 
 export function Header() {
+    const { cartAmount } = useContext(CartContext)
+
     return (
         <header className=" w-full flex px-1 bg-white border-b border-gray-300 h-16 sticky top-0 z-10">
 
@@ -21,7 +25,9 @@ export function Header() {
 
                 <Link to="/cart" className="sm:ml-8 relative">
                     <IoMdCart size={26} color="#121212" />
-                    <span className=" bg-[#F66D21] rounded-full w-5 h-5 flex items-center justify-center text-white text-base absolute -right-2 -top-2">2</span>
+                    {cartAmount > 0 && (
+                        <span className=" bg-[#F66D21] rounded-full w-5 h-5 flex items-center justify-center text-white text-base absolute -right-2 -top-2">{cartAmount}</span>
+                    )}
                 </Link>
             </nav>
 
