@@ -7,7 +7,7 @@ export function ContactSection() {
     return (
         //Falta responsividade
 
-        <section id="contact" className="lg:flex-row w-full h-full min-h-screen flex items-center justify-center flex-col px-6 sm:gap-0 gap-4">
+        <section id="contact" className="lg:flex-row w-full h-full min-h-screen flex items-center justify-center flex-col px-6 py-12 sm:gap-0 gap-4">
             <div className="items-center justify-center flex flex-1 flex-col">
                 <div >
                     <h1 className="2xl:text-5xl sm:text-3xl text-2xl text-[#0ABAB5] font-bold mb-1">Fale Conosoco</h1>
