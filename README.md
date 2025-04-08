@@ -9,13 +9,7 @@
 
 ## 🚧 Sobre o Projeto
 
-Esse foi um projeto pessoal para praticar e consolidar conhecimentos em React, TypeScript e Tailwind CSS. Ele simula um site real de pet shop com foco em apresentação de produtos, usabilidade e visual.
-
-💡 Destaques:
-
-- Estilo moderno e agradável
-- Totalmente responsivo
-- API simulada para carregar dados dos produtos
+Esse foi um projeto pessoal para praticar e consolidar conhecimentos em React, TypeScript, Tailwind CSS e Context API. Ele simula um site real de pet shop com foco em apresentação de produtos, usabilidade e visual.
 
 ---
 
@@ -23,7 +17,8 @@ Esse foi um projeto pessoal para praticar e consolidar conhecimentos em React, T
 
 - **React** – UI reativa e baseada em componentes
 - **TypeScript** – Segurança com tipagens e melhor escalabilidade
-- **Tailwind CSS** – Primeira vez utilizando essa poderosa ferramenta de estilização!
+- **Tailwind CSS** – Poderosa ferramenta de estilização!
+- **Context API** – Gerenciamento de estado global no React
 - **Mock** – Simulação de uma API para produtos
 - **Vite** – Ferramenta de build e desenvolvimento rápido
 
@@ -35,6 +30,7 @@ Esse foi um projeto pessoal para praticar e consolidar conhecimentos em React, T
 - Design adaptado para todos os dispositivos
 - Componentes reutilizáveis
 - Estrutura limpa e organizada
+- Estado global com Context API
 
 ---
 
