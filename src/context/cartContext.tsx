@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useState } from "react";
+import { createContext, ReactNode, useEffect, useState } from "react";
 import { ProductsProps } from "../hooks";
 import toast from "react-hot-toast";
 
@@ -30,6 +30,26 @@ function CartProvider({ children }: CartProviderProps) {
     const [cart, setCart] = useState<CartProps[]>([])
     const [total, setTotal] = useState('')
 
+    useEffect(() => {
+
+        const cartProducts = () => {
+            const stored = localStorage?.getItem('@productsPetLove')
+            const cartItems: CartProps[] = stored ? JSON.parse(stored) : []
+            return cartItems
+        }
+
+        setCart(cartProducts)
+
+        const totalProducts = () => {
+            const totalStored = localStorage.getItem('@totalProductsPetLove')
+            const totalCart: string = totalStored ? JSON.parse(totalStored) : ''
+            return totalCart
+        }
+
+        setTotal(totalProducts)
+
+    }, [])
+
     function addItem(newItem: ProductsProps) {
         const indexItem = cart.findIndex(item => item.id === newItem.id)
 
@@ -40,7 +60,9 @@ function CartProvider({ children }: CartProviderProps) {
             cartList[indexItem].subtotal = cartList[indexItem].price * cartList[indexItem].amount
             setCart(cartList)
             totalResultCart(cartList)
+            saveData(cartList)
             toast.success('Produto adicionado ao carrinho!')
+            console.log(cart)
             return
         }
 
@@ -52,6 +74,7 @@ function CartProvider({ children }: CartProviderProps) {
 
         setCart(products => [...products, data])
         totalResultCart([...cart, data])
+        saveData([...cart, data])
         toast.success('Novo produto adicionado ao carrinho!')
     }
 
@@ -65,6 +88,7 @@ function CartProvider({ children }: CartProviderProps) {
             cartList[indexItem].subtotal = cartList[indexItem].price * cartList[indexItem].amount
             setCart(cartList)
             totalResultCart(cartList)
+            saveData(cartList)
             toast.success('Quantidade atualizada!')
             return
         }
@@ -72,6 +96,7 @@ function CartProvider({ children }: CartProviderProps) {
         const removeProduct = cart.filter(item => item.id !== removeItem.id)
         setCart(removeProduct)
         totalResultCart(removeProduct)
+        saveData(removeProduct)
         toast.success('Produto removido do carrinho!')
     }
 
@@ -84,7 +109,13 @@ function CartProvider({ children }: CartProviderProps) {
             currency: 'BRL'
         })
         setTotal(formatResult)
+        localStorage.setItem('@totalProductsPetLove', JSON.stringify(formatResult))
     }
+
+    function saveData(updateCart: CartProps[]) {
+        localStorage.setItem('@productsPetLove', JSON.stringify(updateCart))
+    }
+
 
     return (
         <CartContext.Provider value={{ cart, cartAmount: cart.length, addItem, removeItem, total }}>
