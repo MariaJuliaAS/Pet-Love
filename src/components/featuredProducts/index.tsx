@@ -34,10 +34,10 @@ export function FeaturedProducts() {
                 ))}
             </div>
 
-            <button className='sm:text-xl sm:mt-12 mt-5 mb-5 bg-white border border-[#0ABAB5] rounded-lg px-3 py-2 text-[#0ABAB5] text-base font-semibold flex items-center cursor-pointer transition-all duration-200 ease-in-out hover:scale-110'>
+            <Link to='/products' className='sm:text-xl sm:mt-12 mt-5 mb-5 bg-white border border-[#0ABAB5] rounded-lg px-3 py-2 text-[#0ABAB5] text-base font-semibold flex items-center cursor-pointer transition-all duration-200 ease-in-out hover:scale-110'>
                 Veja Todos os Produtos
                 <IoIosArrowForward size={20} color='#0ABAB5' className='ml-3' />
-            </button>
+            </Link>
 
         </section>
     )
