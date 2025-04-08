@@ -12,7 +12,7 @@ export function Cart() {
             {cart.length === 0 && (
                 <div className='flex flex-col items-center my-7'>
                     <p className='font-medium text-xl text-[#121212]'>Nenhum produto no carrinho!</p>
-                    <Link to='/products' className='bg-[#121212] my-3 p-1 px-3 text-white rounded-lg'>
+                    <Link to='/products' className='bg-[#121212] my-3 p-1 px-3 text-white rounded-lg transition-all duration-200 hover:scale-105'>
                         Acessar Produtos
                     </Link>
                 </div>
