@@ -4,10 +4,13 @@ import { useEffect, useState } from "react";
 import { ProductsProps } from "../../hooks";
 import { Link } from "react-router-dom";
 import { BsFillCartPlusFill } from "react-icons/bs";
+import { useContext } from "react";
+import { CartContext } from "../../context/cartContext";
 
 export function Details() {
     const { id } = useParams()
     const [productDetail, setProductDetail] = useState<ProductsProps>()
+    const { addItem } = useContext(CartContext)
 
     useEffect(() => {
 
@@ -38,7 +41,7 @@ export function Details() {
                                 currency: 'BRL'
                             })}</strong>
 
-                            <Link to='/cart' className="bg-[#121212] p-1 rounded-lg cursor-pointer transition-all duration-200 ease-in-out hover:scale-110">
+                            <Link to='/cart' onClick={() => addItem(productDetail)} className="bg-[#121212] p-1 rounded-lg cursor-pointer transition-all duration-200 ease-in-out hover:scale-110">
                                 <BsFillCartPlusFill size={20} color="#fff" />
                             </Link>
                         </div>
